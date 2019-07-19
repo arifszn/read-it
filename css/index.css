@@ -1,0 +1,27 @@
+.panel-body {
+    color: #6e6e6e;
+    padding: 30px;
+    text-align: justify;
+}
+
+.container {
+    margin-top: 85px;
+}
+
+.article {
+    cursor: pointer;
+}
+
+.article:hover {
+    background-color: #ffe2e2;
+}
+
+#modal-body-reading {
+    font-weight: bold;
+    font-size: 50px;
+    text-align:center;
+}
+
+.error {
+    display: none;
+}

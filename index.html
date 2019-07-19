@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Read itt</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+
+</head>
+
+<body>
+    <div>
+            <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
+                <a class="navbar-brand">HOME</a>
+                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#settingModal">Set Words Per Minute</button>
+            </nav>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body article" id="article1" data-toggle="modal" data-target="#myModal">
+                        Europe's Competition Commission has long taken a dim view of tech companies abusing their dominant position to stifle rivals, but this has been a particularly bad week for US tech giants in Europe. One day after announcing an investigation into Amazon, the EU handed a 242 million euro ($272 million) fine to chipmaker Qualcomm for lowering the price of its 3G chipsets to force its competitors out of the market. In the era of 5G, it may seem odd that the EU is still looking back at 3G chipsets (and issues that occurred between 2009 and 2011), but Qualcomm has been under investigation for four years. The Commission said that Qualcomm forced one competitor, a company called Icera out of the market, which could potentially have stifled innovation.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body article" id="article2" data-toggle="modal" data-target="#myModal">
+                        Many people, even some diehard Android fans, are still under the impression that Samsung smartwatches are only for Samsung phones. That’s simply not true, and in many ways, they work better than watches with Google’s own Wear OS. One of the things that isn’t better is Bixby. Thankfully, the ever-resourceful XDA community has come through again. It’s now possible to get Google Assistant on a number of Samsung watches. Google Assistant on Samsung watches has been a highly requested feature for a long time. There have been a few attempts to bring Assistant to these watches, but nothing easy or reliable has ever come from them. XDA Senior Member Cybernetic87 took matters into their own hands and now we have a solution that is easy to set up and works extremely well.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body article" id="article3" data-toggle="modal" data-target="#myModal">
+                            The eighth-generation 2020 Chevrolet Corvette is finally here. Rocking a brand-new shape and posting some impressive acceleration figures, even the base model of the C8 Corvette looks to be an absolute riot. But this is only the start of Corvette Fever, and a new report suggests future variants of C8 might get some new-age tech. Chevrolet has already said the C8 Corvette is designed with potential electrification in mind, but at the launch of the 2020 Corvette, Autocar asked a member of the Chevy team if it would be obscene to assume that an electrified Corvette might sport a mild-hybrid powertrain or use a front-axle electric motor to add all-wheel drive. The response was pretty telling: "You would not look stupid if you said that," Autocar reports the Corvette team member saying.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body article" id="article4" data-toggle="modal" data-target="#myModal">
+                        One of the hardest aspects of maintaining a cross-platform product is ensuring its security. Vulnerabilities can be exploited on various platforms in various scenarios, and it’s almost impossible for literally any company’s security department to fix all of them on their own. That’s why companies often use vulnerability disclosure rewards programs, which basically means giving money to someone who finds an issue in your product. Google has several programs of this kind. One of them is the Chrome Vulnerability Rewards Program, which awards security researchers for exploiting vulnerabilities in Chromium, Chrome, and Chrome OS. As you already know, there are a lot of Chromium-based browsers on the market, so the security of this product is crucial.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Reading Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="modal-body-reading">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Setting Modal -->
+    <div class="modal fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Set Words Per Minute</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Words Per Minute</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="wordPerMinute" placeholder="Words Per Minute" required>
+                            <label class="error" for="wordPerMinute">This field is required.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="settingSaveButton">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
